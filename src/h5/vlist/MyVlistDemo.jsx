@@ -31,9 +31,11 @@ const MyVlistDemo = () => {
         setActiveKey(currentKey);
         currentKeyRef.current = currentKey;
         setTimeout(() => {
-          document
-            .getElementsByClassName("adm-side-bar-item-active")?.[0]
-            ?.scrollIntoView();
+          const container = document.querySelector(".detail-list-side");
+          const element = document.querySelector(".adm-side-bar-item-active");
+          container.scrollTo({
+            top: element.offsetTop,
+          });
         }, 0); //先这么做了
       }
     }, 100);
@@ -61,7 +63,7 @@ const MyVlistDemo = () => {
             }}
             style={{
               minHeight:
-                String(Math.max(100 + (tabs.length - 10) * 7, 100)) + "vh",
+                String(Math.max(100 + (tabs.length - 10) * 7.4, 100)) + "vh",
             }}
           >
             {tabs.map((item) => (

@@ -1,6 +1,12 @@
 .vlist-container {
   height: 100vh;
   overflow-y: auto;
+  -ms-overflow-style: none; /* IE 和 Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.vlist-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
 }
 
 .vlist-placeholder {
