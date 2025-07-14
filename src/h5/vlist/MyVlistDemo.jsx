@@ -63,7 +63,7 @@ const MyVlistDemo = () => {
             }}
             style={{
               minHeight:
-                String(Math.max(100 + (tabs.length - 10) * 7.4, 100)) + "vh",
+                String(Math.max(100 + (tabs.length - 10) * 5, 100)) + "vh",
             }}
           >
             {tabs.map((item) => (
