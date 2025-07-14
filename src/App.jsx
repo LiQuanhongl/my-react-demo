@@ -10,6 +10,7 @@ const { Header } = Layout;
 
 import React from "react";
 import Myh5map from "./h5/Myh5map.jsx";
+import MyVlistDemo from "./h5/vlist/MyVlistDemo.jsx";
 
 const ResponsiveComponent = ({ pc, h5 }) => {
   const { isMobile, isTablet } = useResponsive();
@@ -33,7 +34,8 @@ const App = () => {
         </Header>
       </Layout> */}
       <Routes>
-        <Route path="/" element={<RichEditor />} />
+        <Route path="/" element={<MyVlistDemo />} />
+        <Route path="editor-list" element={<RichEditor />} />
         <Route path="editor-detail">
           <Route
             path=":detailId"

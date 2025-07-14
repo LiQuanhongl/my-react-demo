@@ -11,13 +11,13 @@ import { Button } from "antd";
 //   <div style={{ background: "yellow" }}>React 18 渲染的内容</div>
 // );
 // root.render(<ContentDom />);
-// 使用示例：生成400个固定种子的经纬度
-const seed = 12345; // 可修改为任意整数种子
-const randomCoordinates = generateRandomCoordinates(seed, 400);
-
-console.log(randomCoordinates); // 输出400个[经度, 纬度]数组
 
 export default function MapContainer() {
+  // 使用示例：生成400个固定种子的经纬度
+  const seed = 12345; // 可修改为任意整数种子
+  const randomCoordinates = generateRandomCoordinates(seed, 400);
+
+  console.log(randomCoordinates); // 输出400个[经度, 纬度]数组
   const mapRef = useRef({});
   // const [count, setCount] = useState(0);
   // let s = 0;

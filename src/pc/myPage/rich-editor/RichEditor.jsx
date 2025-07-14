@@ -37,9 +37,9 @@ const RichEditor = () => {
             title={item.title}
             variant="borderless"
             style={{
-              width: "45%",
+              width: "40%",
               backgroundColor: "#ddd",
-              margin: 25,
+              margin: "5%",
               overflow: "hidden",
             }}
             onClick={() => clickCard(item.id)}

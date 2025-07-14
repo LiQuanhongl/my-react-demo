@@ -1,0 +1,68 @@
+.vlist-item-container {
+  display: flex;
+  padding: 8px 0;
+}
+
+.vlist-item-img {
+  flex: none;
+  width: 85px;
+  height: 85px;
+  border: 1px solid #999;
+  border-radius: 9px;
+}
+
+.vlist-item-info {
+  padding: 0 8px 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.vlist-item-title {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.vlist-item-tag {
+  font-size: 12px;
+  transform: scale(0.8);
+  transform-origin: 0 0;
+}
+
+.vlist-item-sale {
+  font-size: 12px;
+  color: #999;
+  transform: scale(0.8);
+  transform-origin: 0 0;
+}
+
+.vlist-item-bottom {
+  display: flex;
+  align-items: flex-end;
+  margin-top: auto;
+}
+
+.vlist-item-price {
+  flex: auto;
+}
+
+.vlist-item-add-btn {
+  flex: none;
+  background-color: #05b9f0;
+  border-radius: 20px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vlist-item-price {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.vlist-item-price-char {
+  /* display: inline-block; */
+  font-size: 8px;
+}

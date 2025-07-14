@@ -1,0 +1,63 @@
+.vlist-container {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.vlist-placeholder {
+  height: 300px;
+  border: 2px solid gray;
+  position: relative;
+}
+
+.vlist-placeholder-text {
+  font-size: 25px;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.detail-list-container {
+  display: flex;
+}
+
+.detail-list-side {
+  flex: none;
+  width: 65px;
+  height: 100vh;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* IE 和 Edge */
+  scrollbar-width: none; /* Firefox */
+  position: sticky;
+  top: 0;
+}
+
+.detail-list-side::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.detail-list-side .adm-side-bar {
+  width: 100%;
+  font-size: 10px;
+}
+
+.detail-list-side .adm-side-bar-item-highlight {
+  display: none;
+}
+
+.detail-list-main {
+  flex: auto;
+  padding: 0 10px 0;
+}
+
+.detail-list-title {
+  display: block;
+  font-size: 12px;
+
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  padding: 15px 0 10px;
+  z-index: 10;
+}
