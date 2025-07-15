@@ -5,6 +5,7 @@ import RichEditor from "./pc/myPage/rich-editor/RichEditor.jsx";
 import RichEditorDetail from "./pc/myPage/rich-editor/RichEditorDetail.jsx";
 import { useResponsive } from "./utils/device.js";
 import Myh5page from "./h5/myH5.jsx";
+import VConsole from 'vconsole';
 
 const { Header } = Layout;
 
@@ -21,6 +22,8 @@ const ResponsiveComponent = ({ pc, h5 }) => {
 
   return <>{pc}</>;
 };
+
+window.vConsole = new VConsole();
 
 const App = () => {
   // const location = useLocation();

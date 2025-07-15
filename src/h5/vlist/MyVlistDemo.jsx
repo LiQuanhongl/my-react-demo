@@ -4,6 +4,7 @@ import { SideBar } from "antd-mobile";
 import tabs from "./data";
 import { useEffect, useRef, useState } from "react";
 import { throttle } from "lodash";
+import {FpsView} from "react-fps";
 
 const MyVlistDemo = () => {
   const [activeKey, setActiveKey] = useState(tabs[0].id);
@@ -11,6 +12,7 @@ const MyVlistDemo = () => {
   const currentKeyRef = useRef(tabs[0].id);
 
   const mainElementRef = useRef(null);
+
 
   useEffect(() => {
     const handleScroll = throttle(() => {
@@ -50,6 +52,7 @@ const MyVlistDemo = () => {
 
   return (
     <div className="vlist-container" ref={mainElementRef}>
+        <FpsView top="70vh"/>
       <div className="vlist-placeholder">
         <p className="vlist-placeholder-text">假装这里有300px高的内容</p>
       </div>
