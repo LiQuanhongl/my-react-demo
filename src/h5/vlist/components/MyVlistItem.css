@@ -1,6 +1,8 @@
 .vlist-item-container {
   display: flex;
   padding: 8px 0;
+  box-sizing: border-box;
+  height: 101px;
 }
 
 .vlist-item-img {

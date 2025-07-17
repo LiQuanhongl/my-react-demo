@@ -5,7 +5,8 @@ import RichEditor from "./pc/myPage/rich-editor/RichEditor.jsx";
 import RichEditorDetail from "./pc/myPage/rich-editor/RichEditorDetail.jsx";
 import { useResponsive } from "./utils/device.js";
 import Myh5page from "./h5/myH5.jsx";
-import VConsole from 'vconsole';
+import VConsole from "vconsole";
+import MyVlistDemoApply from "./h5/vlist/vlistApply/MyVlistDemoApply.jsx";
 
 const { Header } = Layout;
 
@@ -38,6 +39,7 @@ const App = () => {
       </Layout> */}
       <Routes>
         <Route path="/" element={<MyVlistDemo />} />
+        <Route path="vlist-apply" element={<MyVlistDemoApply />} />
         <Route path="editor-list" element={<RichEditor />} />
         <Route path="editor-detail">
           <Route

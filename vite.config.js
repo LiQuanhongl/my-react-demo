@@ -22,14 +22,14 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [
-        postcssPxToViewport({
-          viewportWidth: 375, // 设计稿宽度
-          unitPrecision: 5,
-          propList: ["*"],
-          selectorBlackList: [/^.pc-/], // 忽略PC样式
-          exclude: [/\/pc\//], // 忽略PC目录
-        }),
-      ],
+        // postcssPxToViewport({
+        //   viewportWidth: 375, // 设计稿宽度
+        //   unitPrecision: 5,
+        //   propList: ["*"],
+        //   selectorBlackList: [/^.pc-/], // 忽略PC样式
+        //   exclude: [/\/pc\//], // 忽略PC目录
+        // }),
+      ], //先不用了
     },
   },
   server: {

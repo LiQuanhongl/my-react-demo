@@ -4,7 +4,9 @@ import { SideBar } from "antd-mobile";
 import tabs from "./data";
 import { useEffect, useRef, useState } from "react";
 import { throttle } from "lodash";
-import {FpsView} from "react-fps";
+import { FpsView } from "react-fps";
+import { useNavigate } from "react-router-dom";
+import { Button } from "antd";
 
 const MyVlistDemo = () => {
   const [activeKey, setActiveKey] = useState(tabs[0].id);
@@ -12,7 +14,6 @@ const MyVlistDemo = () => {
   const currentKeyRef = useRef(tabs[0].id);
 
   const mainElementRef = useRef(null);
-
 
   useEffect(() => {
     const handleScroll = throttle(() => {
@@ -50,10 +51,14 @@ const MyVlistDemo = () => {
     };
   }, []);
 
+  const navigate = useNavigate();
   return (
     <div className="vlist-container" ref={mainElementRef}>
-        <FpsView top="70vh"/>
+      <FpsView top="70vh" />
       <div className="vlist-placeholder">
+        <Button type="primary" onClick={() => navigate("/vlist-apply")}>
+          点击跳转虚拟列表
+        </Button>
         <p className="vlist-placeholder-text">假装这里有300px高的内容</p>
       </div>
       <div className="detail-list-container">
